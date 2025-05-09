@@ -238,6 +238,9 @@
     margin-bottom: 18px;
     margin-right: 146px;
   }
+  .footer-list-social {
+    justify-content: flex-start;
+  }
   .footer-list-resourse {
     margin-right: 126px;
   }
@@ -267,5 +270,8 @@
   .footer-form-button {
     margin-left: 0;
     margin-right: 0;
+  }
+  .footer-made {
+    font-size: 16px;
   }
 }
