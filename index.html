@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!-- #region Top Line -->
@@ -223,7 +224,7 @@
 
       <!-- #region Collaborative -->
       <section class="collaboration">
-        <div class="container">
+        <div class="container collaboration-container">
           <img src="./images/collaboration.png" alt="folder" />
           <div>
             <h2 class="collaboration-title">Optimisation for</h2>
@@ -250,7 +251,7 @@
 
       <!-- #region Quick & Easy Process -->
       <section class="process">
-        <div class="container">
+        <div class="container process-container">
           <h2 class="process-title">Quick & Easy Process</h2>
           <p class="process-descr">
             Do you require some help for your project: Conception workshop,
@@ -304,30 +305,36 @@
           <ul class="strategies-list">
             <li class="strategies-item">
               <img src="./images/stratage-1.jpg" alt="writing" />
-              <p class="photo-descr">
-                By <span class="photo-name">Wahid Ari</span> | 03 March 2019
-              </p>
-              <h3 class="photo-title">
-                Increasing Prosperity With Positive Thinking
-              </h3>
+              <div class="strategies-item-wraper">
+                <p class="photo-descr">
+                  By <span class="photo-name">Wahid Ari</span> | 03 March 2019
+                </p>
+                <h3 class="photo-title">
+                  Increasing Prosperity With Positive Thinking
+                </h3>
+              </div>
             </li>
             <li class="strategies-item">
               <img src="./images/stratage-2.jpg" alt="view from ofice" />
-              <p class="photo-descr">
-                By <span class="photo-name">Wahid Ari</span> | 03 March 2019
-              </p>
-              <h3 class="photo-title">
-                Motivation Is The First Step To Success
-              </h3>
+              <div class="strategies-item-wraper">
+                <p class="photo-descr">
+                  By <span class="photo-name">Wahid Ari</span> | 03 March 2019
+                </p>
+                <h3 class="photo-title">
+                  Motivation Is The First Step To Success
+                </h3>
+              </div>
             </li>
             <li class="strategies-item">
               <img src="./images/stratage-3.jpg" alt="skyscraper" />
-              <p class="photo-descr">
-                By <span class="photo-name">Wahid Ari</span> | 03 March 2019
-              </p>
-              <h3 class="photo-title">
-                Success Steps For Your Personal Or Business
-              </h3>
+              <div class="strategies-item-wraper">
+                <p class="photo-descr">
+                  By <span class="photo-name">Wahid Ari</span> | 03 March 2019
+                </p>
+                <h3 class="photo-title">
+                  Success Steps For Your Personal Or Business
+                </h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -343,37 +350,59 @@
             <li class="price-list-item">
               <h3 class="price-list-item-title">Free</h3>
               <p class="price-list-item-descr">Brief price description</p>
-              <p class="price-list-item-number">0</p>
-              <span class="price-list-item-currency">$</span>
-              <p class="price-list-item-how">Per / month</p>
-              <p class="price-list-item-oper">Only 2 Operators</p>
-              <p class="price-list-item-msg">Notifications</p>
-              <p class="price-list-item-land">Landing</p>
+              <div class="wrraper-cost">
+                <p class="price-list-item-number">0</p>
+                <div>
+                  <span class="price-list-item-currency">$</span>
+                  <p class="price-list-item-how">Per / month</p>
+                </div>
+              </div>
+              <div class="price-list-item-info">
+                <p>Only 2 Operators</p>
+                <p>Notifications</p>
+                <p>Landing Pages</p>
+              </div>
               <button class="price-list-item-button" type="button">
                 Order Now
               </button>
             </li>
-            <li>
-              <h3>Standard</h3>
-              <p>Brief price description</p>
-              <p>5</p>
-              <span>$</span>
-              <p class="price-list-item-how">Per / month</p>
-              <p>5+ Operators</p>
-              <p>Notifications</p>
-              <p>Landing Pages</p>
-              <button type="button">Order Now</button>
+            <li class="price-list-item">
+              <h3 class="price-list-item-title">Standard</h3>
+              <p class="price-list-item-descr">Brief price description</p>
+              <div class="wrraper-cost">
+                <p class="price-list-item-number">5</p>
+                <div>
+                  <span class="price-list-item-currency">$</span>
+                  <p class="price-list-item-how">Per / month</p>
+                </div>
+              </div>
+              <div class="price-list-item-info">
+                <p>5+ Operators</p>
+                <p>Notifications</p>
+                <p>Landing Pages</p>
+              </div>
+              <button class="price-list-item-button" type="button">
+                Order Now
+              </button>
             </li>
-            <li>
-              <h3>Premium</h3>
-              <p>Brief price description</p>
-              <p>10</p>
-              <span>$</span>
-              <p class="price-list-item-how">Per / month</p>
-              <p>10+ Operators</p>
-              <p>Notifications</p>
-              <p>Landing Pages</p>
-              <button type="button">Order Now</button>
+            <li class="price-list-item">
+              <h3 class="price-list-item-title">Premium</h3>
+              <p class="price-list-item-descr">Brief price description</p>
+              <div class="wrraper-cost">
+                <p class="price-list-item-number">10</p>
+                <div>
+                  <span class="price-list-item-currency">$</span>
+                  <p class="price-list-item-how">Per / month</p>
+                </div>
+              </div>
+              <div class="price-list-item-info">
+                <p>10+ Operators</p>
+                <p>Notifications</p>
+                <p>Landing Pages</p>
+              </div>
+              <button class="price-list-item-button" type="button">
+                Order Now
+              </button>
             </li>
           </ul>
         </div>
@@ -381,44 +410,56 @@
       <!-- #endregion Price Table -->
 
       <!-- #region What Clients Say -->
-      <section>
+      <section class="review">
         <div class="container">
-          <h2>What Clients Say</h2>
-          <p>
+          <h2 class="review-title">What Clients Say</h2>
+          <p class="review-descr">
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </p>
-          <ul>
-            <li>
+          <ul class="review-list">
+            <li class="review-list-item">
               <img src="./images/icon/mark.svg" alt="mark" />
-              <p>
+              <p class="description">
                 Product helps you see how many more days you need to work to
                 reach your financial goal.
               </p>
-              <img src="./images/clients-1.png" alt="clients" />
-              <h3>Wahid Ari</h3>
-              <p>Designer</p>
+              <div class="review-client-wraper">
+                <img src="./images/clients-1.png" alt="clients" />
+                <div>
+                  <h3 class="client-name">Wahid Ari</h3>
+                  <p class="client-position">Designer</p>
+                </div>
+              </div>
             </li>
-            <li>
+            <li class="review-list-item">
               <img src="./images/icon/mark.svg" alt="mark" />
-              <p>
+              <p class="description">
                 Product helps you see how many more days you need to work to
                 reach your financial goal.
               </p>
-              <img src="./images/clients-2.png" alt="clients" />
-              <h3>Wahid Ari</h3>
-              <p>Designer</p>
+              <div class="review-client-wraper">
+                <img src="./images/clients-2.png" alt="clients" />
+                <div>
+                  <h3 class="client-name">Wahid Ari</h3>
+                  <p class="client-position">Designer</p>
+                </div>
+              </div>
             </li>
-            <li>
+            <li class="review-list-item">
               <img src="./images/icon/mark.svg" alt="mark" />
               <img src="" alt="" />
-              <p>
+              <p class="description">
                 Product helps you see how many more days you need to work to
                 reach your financial goal.
               </p>
-              <img src="./images/clients-3.png" alt="clients" />
-              <h3>Wahid Ari</h3>
-              <p>Designer</p>
+              <div class="review-client-wraper">
+                <img src="./images/clients-3.png" alt="clients" />
+                <div>
+                  <h3 class="client-name">Wahid Ari</h3>
+                  <p class="client-position">Designer</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -426,71 +467,114 @@
       <!-- #endregion What Clients Say -->
 
       <!-- #region Join 100 Compannies -->
-      <section>
-        <div class="container">
-          <h2>Join 100 Compannies who boost their business with Product</h2>
-          <button type="button">Get This</button>
+      <section class="compannies">
+        <div class="container compannies-container">
+          <div>
+            <h2 class="compannies-title">
+              Join 100 Compannies who boost their business with Product
+            </h2>
+            <button class="compannies-button" type="button">Get This</button>
+          </div>
           <img src="./images/screen.png" alt="screen" />
         </div>
       </section>
       <!-- #endregion Join 100 Compannies -->
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <a href="./index.html"
-          ><img
-            src="./images/icon/logo.svg"
-            alt="logo"
-            width="40"
-            height="36"
-          />Product</a
-        >
-        <ul>
-          <li>
-            <a href=""
-              ><img src="./images/icon/instagram.svg" alt="instagram"
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="./images/icon/facebook.svg" alt="facebook"
-            /></a>
-          </li>
-          <li>
-            <a href=""><img src="./images/icon/twitter.svg" alt="twitter" /></a>
-          </li>
-        </ul>
-        <ul>
-          <li><h3>Resource</h3></li>
-          <li>
-            <a href="">About Us</a>
-          </li>
-          <li>
-            <a href="">Blog</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
-          <li>
-            <a href="">FAQ</a>
-          </li>
-        </ul>
-        <ul>
-          <li><h3>Legal Stuff</h3></li>
-          <li>
-            <a href="">Disclaimer</a>
-          </li>
-          <li>
-            <a href="">Financing</a>
-          </li>
-          <li>
-            <a href="">Privacy Policy</a>
-          </li>
-        </ul>
-        <h3>knowing you're always on the best energy deal.</h3>
-        <!-- Тут ще потрібна форма -->
-        <button type="button">Sign up Now</button>
-        <p>Made With Love By Figmaland All Right Reserved</p>
+        <div class="footer-container">
+          <div>
+            <a class="footer-logo" href="./index.html"
+              ><img
+                class="logo-img"
+                src="./images/icon/logo.svg"
+                alt="logo"
+                width="32"
+                height="30"
+              />Product</a
+            >
+            <ul class="footer-list-social">
+              <li>
+                <a class="link" href=""
+                  ><img
+                    src="./images/icon/instagram.svg"
+                    alt="instagram"
+                    width="24"
+                    height="24"
+                /></a>
+              </li>
+              <li>
+                <a class="link" href=""
+                  ><img
+                    src="./images/icon/facebook.svg"
+                    alt="facebook"
+                    width="24"
+                    height="24"
+                /></a>
+              </li>
+              <li>
+                <a class="link" href=""
+                  ><img
+                    src="./images/icon/twitter.svg"
+                    alt="twitter"
+                    width="24"
+                    height="24"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer-list-resourse">
+            <li><h3 class="title">Resource</h3></li>
+            <li>
+              <a class="link" href="">About Us</a>
+            </li>
+            <li>
+              <a class="link" href="">Blog</a>
+            </li>
+            <li>
+              <a class="link" href="">Contact</a>
+            </li>
+            <li>
+              <a class="link" href="">FAQ</a>
+            </li>
+          </ul>
+          <ul class="footer-list-stuff">
+            <li><h3 class="title">Legal Stuff</h3></li>
+            <li>
+              <a class="link" href="">Disclaimer</a>
+            </li>
+            <li>
+              <a class="link" href="">Financing</a>
+            </li>
+            <li>
+              <a class="link" href="">Privacy Policy</a>
+            </li>
+          </ul>
+          <form class="footer-form">
+            <p class="footer-form-descr">
+              knowing you're always on the best energy deal.
+            </p>
+            <div class="footer-form-wraper">
+              <svg class="footer-form-icon" width="18" height="28">
+                <use href="./images/icon.svg#icon-mobile"></use>
+              </svg>
+              <label>
+                <input
+                  class="footer-form-input"
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                />
+              </label>
+            </div>
+            <button class="footer-form-button" type="button">
+              Sign up Now
+            </button>
+          </form>
+        </div>
+        <p class="footer-made">
+          Made With Love By Figmaland All Right Reserved
+        </p>
       </div>
     </footer>
   </body>
